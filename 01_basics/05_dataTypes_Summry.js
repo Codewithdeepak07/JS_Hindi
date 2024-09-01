@@ -23,3 +23,21 @@ const myFunction = function(){
     console.log("Hello World")
 }
 console.log(typeof myFunction)
+
+/***************************Memory ****************/ 
+//Stack (Primitive), Heap (Non - Primitive)
+let name = "Deepak"
+let newName = name
+newName = "Anuj"
+console.log(name)
+console.log(newName)
+
+let userOne = {
+    name : "Deepak",
+    upi : "userybl"
+}
+
+let userTwo = userOne
+userTwo.upi = "amazonybl"
+console.log(userOne.upi)
+console.log(userTwo.upi)
